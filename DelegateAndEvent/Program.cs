@@ -39,6 +39,8 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine();
 Console.WriteLine("Senaryo 3: Finansal Uygulama");
 Console.WriteLine("-------------------");
+Console.WriteLine();
+Console.WriteLine();
 
 // Banka hesabı ve kullanıcı bildirim nesneleri oluşturuluyor
 BankAccount account = new BankAccount(initialBalance: 1000m, minimumBalance: 200m, transactionThreshold: 500m);
@@ -58,6 +60,8 @@ account.Withdraw(700m); // Düşük bakiye uyarısı ve başarısız işlem
 Console.WriteLine();
 Console.WriteLine("Senaryo 2: Oyun Geliştirme");
 Console.WriteLine("-------------------");
+Console.WriteLine();
+Console.WriteLine();
 
 Game game = new Game();
 
@@ -73,6 +77,8 @@ game.CurrentEnemy.TakeDamage(25); // Düşmanı öldürme
 Console.WriteLine();
 Console.WriteLine("Senaryo 1: E-Ticaret Sistemi");
 Console.WriteLine("-------------------");
+Console.WriteLine();
+Console.WriteLine();
 // Sipariş yönetimi, müşteri hizmetleri, depo yönetimi ve muhasebe nesneleri oluşturuluyor
 // Sipariş yönetimi, müşteri hizmetleri, depo yönetimi ve muhasebe nesneleri oluşturuluyor
 OrderManager orderManager = new OrderManager();
