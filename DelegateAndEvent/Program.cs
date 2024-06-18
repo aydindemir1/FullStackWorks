@@ -1,9 +1,40 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DelegateAndEvent.DelegateAndEventETrade;
+using DelegateAndEvent.DelegateAndEventETradeExample;
 using DelegateAndEvent.DelegateAndEventGaming;
 using DelegateAndEvent.FinancialApps;
+using Accounting = DelegateAndEvent.DelegateAndEventETrade.Accounting;
+using CustomerService = DelegateAndEvent.DelegateAndEventETrade.CustomerService;
+
 
 Console.WriteLine("Hello, World!");
+
+//Console.WriteLine();
+//Console.WriteLine("Senaryo 1: E-Ticaret Sistemi");
+//Console.WriteLine("-------------------");
+
+//// Sipariş oluşturma
+//Order order = new Order
+//{
+//    OrderId = 1,
+//    CustomerName = "John Doe",
+//    OrderDate = DateTime.Now,
+//    Items = new List<string> { "Laptop", "Mouse", "Keyboard" }
+//};
+
+//// Departmanlar
+//CustomerService customerServiceExample = new CustomerService();
+//WarehouseManagement warehouseManagement = new WarehouseManagement();
+//Accounting accountingExample = new Accounting();
+
+//// Event Abonelikleri
+//order.OrderCompleted += customerServiceExample.OnOrderCompleted;
+//order.OrderCompleted += warehouseManagement.OnOrderCompleted;
+//order.OrderCompleted += accountingExample.OnOrderCompleted;
+
+//// Siparişi Tamamlama
+//order.CompleteOrder();
+
 
 Console.WriteLine();
 Console.WriteLine("Senaryo 3: Finansal Uygulama");
@@ -42,6 +73,7 @@ game.CurrentEnemy.TakeDamage(25); // Düşmanı öldürme
 Console.WriteLine();
 Console.WriteLine("Senaryo 1: E-Ticaret Sistemi");
 Console.WriteLine("-------------------");
+// Sipariş yönetimi, müşteri hizmetleri, depo yönetimi ve muhasebe nesneleri oluşturuluyor
 // Sipariş yönetimi, müşteri hizmetleri, depo yönetimi ve muhasebe nesneleri oluşturuluyor
 OrderManager orderManager = new OrderManager();
 CustomerService customerService = new CustomerService();
