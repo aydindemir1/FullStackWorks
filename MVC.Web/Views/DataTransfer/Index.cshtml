@@ -1,0 +1,42 @@
+﻿@model IndexPageViewModel
+
+@{
+    ViewData["Title"] = "Index";
+
+    var names = (ViewData["nameList"] as List<string>)!;
+
+    var numbers = ViewBag.numberList as List<int>;
+}
+
+<h1>Data Transfer MVC  Index Page</h1>
+<br />
+<h1>View Data @ViewData["name"]</h1>
+<br />
+<h1>number: @ViewBag.number</h1>
+<br />
+@foreach(var name in (ViewData["nameList"] as List<string>)!)
+    {
+        <p>@name</p>
+    }
+<br />
+@foreach (var name in ( List<string>) ViewData["nameList"]!)
+{
+    <p>@name</p>
+}
+<br />
+@foreach (var name in names)
+{
+    <p>@name</p>
+}
+<br />
+@foreach (var number in numbers)
+{
+    <p>@number</p>
+}
+<br />
+<h2>@Model.Name</h2>
+<br />
+@foreach(var name in Model.Names)
+{
+    <p>@name</p>
+}
